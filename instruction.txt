@@ -1,0 +1,6 @@
+To Run Project Initially
+    To Install Dependencies
+      Command : npm Install
+    To Run Local Development server 
+      Command : npm start 
+
