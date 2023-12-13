@@ -4,6 +4,7 @@ import Navbar from './component/Navbar/Navbar';
 import Hero from './component/Hero/Hero';
 import Service from './component/Service/Service';
 import Skill from './component/Skill/Skill';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero></Hero>
       <Service></Service>
       <Skill></Skill>
+      <Footer></Footer>
     </div>
   );
 }

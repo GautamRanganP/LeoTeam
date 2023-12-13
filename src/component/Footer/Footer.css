@@ -1,0 +1,25 @@
+.footer{
+    margin-top: 32px;
+}
+.footer-msg-text{
+    width: 250px;
+}
+.footer-msg{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.footer-section{
+    background-color: black;
+}
+.footer-section p, .footer-section span{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.footer-section p{
+    padding: 16px 0px;
+}
+.footer-icon{
+    padding-top: 24px;
+}
