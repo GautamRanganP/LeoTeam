@@ -1,0 +1,40 @@
+.service-content{
+    display: flex;
+    flex-direction: column;
+}
+.service-head{
+    text-align: center;
+}
+.service-head h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+.service-head p{
+    font-size: 24px;
+    font-weight: 500;
+}
+.image-service-wrap,.image-service-container{
+    display: flex;
+}
+.img-one{
+    width: 70%;
+    height: 804px;
+    margin-right: 20px;
+}
+.img-one img{
+    object-fit: cover;
+    height: 392px;
+}
+.img-one img:nth-child(2){
+    margin-top: 16px;
+}
+.img-two{
+    width: 30%;
+}
+.img-three{
+    margin-right: 20px;
+}
+.img-three,.img-four{
+    margin-top: 20px;
+    width: 49.5%;
+}
