@@ -1,7 +1,7 @@
 import './skill.css'
-function Skill() {
+function Skill(props) {
     return (
-      <section className="skill">
+      <section className="skill" ref={props.data}>
           <h2 className="skill-header">SKILLS</h2>
           <div className='skill-grid-container'>
             <img src={process.env.PUBLIC_URL + '/assests/image/adobe1.png'} alt="Example"  />

@@ -1,5 +1,7 @@
 import './Footer.css'
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 function Footer() {
     return (
       <section className="footer">
@@ -8,9 +10,9 @@ function Footer() {
         </div>
         <div className='footer-section'>
             <div className='footer-msg footer-icon'>
-                <span>Facebook icon </span>
-                <span> Facebook icon </span>
-                <span> Facebook icon</span>
+                <span><FacebookIcon></FacebookIcon> </span>
+                <span><InstagramIcon></InstagramIcon> </span>
+                <span><TwitterIcon></TwitterIcon></span>
             </div>
             <p>&copy;copyright all rights reserved</p>
         </div>

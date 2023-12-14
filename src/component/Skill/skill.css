@@ -20,6 +20,8 @@
     width: 200px;
     height: 200px;
 }
+
+
 @media screen and (max-width:1600px) {
     .skill{
         max-width: 1192px;

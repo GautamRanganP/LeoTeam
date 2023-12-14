@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import './service.css'
 function Service(props) {
+    const [hovered, setHovered] = useState(false);
+
     return (
       <section className="service" ref={props.data}>
           <div className="service-head">
@@ -18,16 +21,17 @@ function Service(props) {
             </div>
             <div className='image-service-container'>
                 <div className='img-three'>
-                    <img src={process.env.PUBLIC_URL + '/assests/image/image1.jpg'} alt="Example" width="100%" height="100%" />
+                    <img src={process.env.PUBLIC_URL + '/assests/image/image1.jpg'} alt="Example" width="100%" height="100%" 
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                    />
+                    <div className='overlay-img'><h2 className={hovered ? 'text visible' : 'text'}>Web Development</h2></div>
                 </div>
                 <div className='img-four'>
                     <img src={process.env.PUBLIC_URL + '/assests/image/image2.jpeg'} alt="Example" width="100%" height="100%" />
+                    {/* <div className="overlay-img"><h2 className={hovered ? 'text visible' : 'text'}>Hover Me</h2></div> */}
                 </div>
             </div>
-{/* 
-          <img src={process.env.PUBLIC_URL + '/assests/image/image3.jpg'} alt="Example" />
-          <img src={process.env.PUBLIC_URL + '/assests/image/image4.jpg'} alt="Example" />
-          <img src={process.env.PUBLIC_URL + '/assests/image/image5.jpg'} alt="Example" /> */}
           </div>
       </section>
     );

@@ -23,3 +23,6 @@
 .footer-icon{
     padding-top: 24px;
 }
+.footer-icon span{
+    margin-right: 5px;
+}

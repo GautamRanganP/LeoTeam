@@ -8,10 +8,18 @@ import Footer from './component/Footer/Footer';
 import { useRef } from 'react';
 
 function App() {
-  const sectionRef = useRef(null);
-  const scrollToSection = () =>{
-    if(sectionRef.current){
-      sectionRef.current.scrollIntoView({behavior:'smooth'})
+  const sectionServiceRef = useRef(null);
+  const sectionSkillRef = useRef(null)
+  const scrollToSection = (option) =>{
+    if(option==='sectionService'){
+      if(sectionServiceRef.current){
+        sectionServiceRef.current.scrollIntoView({behavior:'smooth'})
+      }
+    }
+    if(option==='sectionSkill'){
+      if(sectionSkillRef.current){
+        sectionSkillRef.current.scrollIntoView({behavior:'smooth'})
+      }
     }
   }
   return (
@@ -19,14 +27,14 @@ function App() {
        <div className='navbar'>
         <ul className='navbar-container'>
           <li className='navbar-link'>Home</li>
-          <li className='navbar-link' onClick={scrollToSection}>Service</li>
-          <li className='navbar-link'>Contact</li>
+          <li className='navbar-link' onClick={()=> scrollToSection('sectionService')}>Service</li>
+          <li className='navbar-link' onClick={()=> scrollToSection('sectionSkill')}>Skills</li>
           <li className='navbar-link'>About us</li>
         </ul>
       </div>
       <Hero></Hero>
-      <Service data={sectionRef}></Service>
-      <Skill></Skill>
+      <Service data={sectionServiceRef}></Service>
+      <Skill data={sectionSkillRef}></Skill>
       <Footer></Footer>
     </div>
   );

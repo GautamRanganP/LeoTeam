@@ -17,3 +17,8 @@
     color: rgb(239, 239, 65);
     cursor: pointer;
 }
+@media screen and (max-width:768px) {
+    .navbar-container li{
+        padding: 16px;
+    }
+}

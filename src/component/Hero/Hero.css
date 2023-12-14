@@ -31,3 +31,10 @@
     font-weight: 500;
     color: white;
   }
+  @media screen and (max-width:768px) {
+    .hero-content{
+      top: 50px;
+      left: 30px
+    }
+
+  }
