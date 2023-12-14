@@ -15,4 +15,5 @@
     list-style: none;
     padding: 16px 24px;
     color: rgb(239, 239, 65);
+    cursor: pointer;
 }

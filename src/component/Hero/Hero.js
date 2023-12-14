@@ -4,7 +4,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-image">
         <img src={process.env.PUBLIC_URL + '/assests/image/content.webp'} alt="Example" />
-        <div class="overlay"></div>
+        <div className="overlay"></div>
       </div>
       <div className='hero-content'>
         <h3>Introduction</h3>

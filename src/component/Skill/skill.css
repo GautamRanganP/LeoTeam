@@ -10,12 +10,47 @@
     margin-top: 32px;
 }
 .skill-grid-container{
+    width: 100%;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
 }
 .skill-grid-container img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width:1600px) {
+    .skill{
+        max-width: 1192px;
+    } 
+}
+@media screen and (max-width:1200px) {
+    .skill{
+        max-width: 962px;
+    } 
+}
+@media screen and (max-width:768px) {
+    .skill{
+        max-width: 562px;
+        margin: 10px auto;
+    } 
+    .skill-grid-container img{
+        max-width: 150px;
+        max-height: 200px;
+        width: unset !important;
+        height: unset !important;
+    }
+    .skill-grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:525px) {
+    .skill{
+        max-width: 362px;
+        margin: 10px auto;
+    } 
+    .skill-grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }

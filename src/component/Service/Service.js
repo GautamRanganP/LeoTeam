@@ -1,7 +1,7 @@
 import './service.css'
-function Service() {
+function Service(props) {
     return (
-      <section className="service">
+      <section className="service" ref={props.data}>
           <div className="service-head">
             <h3>Service</h3>
             <p>What we are good at</p>
